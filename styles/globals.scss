@@ -1,0 +1,105 @@
+@import 'normalize';
+@import 'pure-react-carousel/dist/react-carousel.es';
+
+html {
+  height: 100%;
+  font-size: 10px;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.6rem;
+  overflow: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+section {
+  padding: 2.4rem;
+
+  &.has-no-vertical-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &.has-no-vertical-padding-top {
+    padding-top: 0;
+  }
+
+  &.has-gray-background {
+    background-color: #f4f4f4;
+  }
+}
+
+.desktop-limit {
+  max-width: 400px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 401px) {
+    border-left: 1px solid #303030;
+    border-right: 1px solid #303030;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26rem;
+  height: 4rem;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0.8rem;
+  font-family: 'MuseoModerno', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #ffffff;
+  transition: opacity 0.3s;
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  &.is-pink {
+    background-color: #fd76b8;
+  }
+
+  &.is-green {
+    background-color: #55dbc9;
+  }
+}
+
+// Fade transition
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}

@@ -1,0 +1,117 @@
+.productCarousel {
+  .brandConcept {
+    .title {
+      color: #55dbc9;
+    }
+
+    .info .line {
+      .key {
+        color: #55dbc9;
+      }
+
+      .price {
+        color: #55dbc9;
+      }
+    }
+
+    .buttons a.isColorful {
+      background-color: #55dbc9;
+    }
+  }
+
+  .brandWeb {
+    .title {
+      color: #fd76b8;
+    }
+
+    .info .line {
+      .key {
+        color: #fd76b8;
+      }
+
+      .price {
+        color: #fd76b8;
+      }
+    }
+
+    .buttons a.isColorful {
+      background-color: #fd76b8;
+    }
+  }
+
+  .title {
+    margin: 0;
+    font-family: 'MuseoModerno', sans-serif;
+    font-weight: 600;
+    font-size: 5.7rem;
+    line-height: 1;
+  }
+
+  .description {
+    margin-top: 2.5rem;
+  }
+
+  p {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #000000;
+  }
+
+  .info {
+    margin-top: 3.8rem;
+
+    .line {
+      display: flex;
+      align-items: center;
+      min-height: 6rem;
+      padding: 1.5rem 0;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #aaaaaa;
+      }
+
+      .key {
+        flex: 0 0 5rem;
+        margin-right: 2.3rem;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      .value {
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 1.3rem;
+        line-height: 1.2;
+        color: #606060;
+      }
+
+      .installments {
+        margin-left: .5rem;
+        font-style: italic;
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 12.6rem;
+      height: 3.4rem;
+      margin: 0 1.6rem;
+      border-radius: .8rem;
+      background-color: #606060;
+      font-size: 1.4rem;
+      font-family: 'MuseoModerno', sans-serif;
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+}

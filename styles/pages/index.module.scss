@@ -1,0 +1,78 @@
+.home {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2.4rem;
+
+    .normal {
+      margin-top: 3rem;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 1.4rem;
+      line-height: 1.25;
+      color: #000000;
+    }
+
+    .gradient {
+      width: auto;
+      margin: 0;
+      font-family: 'MuseoModerno', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 3.8rem;
+      color: #a5eae2;
+      background: linear-gradient(90deg, #a5eae2 0%, #fd76b8 80%);
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+      text-fill-color: transparent;
+    }
+  }
+
+  .manifest {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26rem;
+    height: 4rem;
+    margin: 3.6rem auto;
+    padding: 0;
+    border: 0;
+    border-radius: .8rem;
+    background-color: #fd76b8;
+    font-family: 'MuseoModerno', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #ffffff;
+    transition: opacity .3s;
+
+    &:active,
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover {
+      opacity: .75;
+    }
+
+    svg {
+      position: absolute;
+      right: 1rem;
+      bottom: -2.5rem;
+      height: 6rem;
+      max-height: 50rem;
+      color: #303030;
+      z-index: 10;
+    }
+  }
+}
+
+.carouselWrapper {
+  margin-top: 5rem;
+  padding: 0 2.4rem;
+}

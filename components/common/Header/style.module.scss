@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.7rem 2.5rem;
+  line-height: 0;
+
+  .logo {
+    position: relative;
+    z-index: 101;
+
+    svg {
+      height: 36px;
+    }
+  }
+}

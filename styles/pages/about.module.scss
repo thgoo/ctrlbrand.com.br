@@ -1,0 +1,55 @@
+.about {
+  p {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    text-align: center;
+    color: #303030;
+  }
+
+  .bold {
+    margin-bottom: 2rem;
+    font-family: 'MuseoModerno', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  :global .button {
+    width: 180px;
+    margin-top: 2.4rem;
+  }
+
+  hr {
+    width: 100%;
+    height: 1px;
+    margin: 0 0 2.4rem;
+    border: 0;
+    background-color: #dde2e6;
+  }
+}
+
+.title {
+  margin: 1rem 0 2rem;
+  font-family: 'MuseoModerno', sans-serif;
+  font-weight: 600;
+  font-size: 3.2rem;
+  text-align: center;
+
+  &.isPink {
+    color: #fd76b8;
+  }
+
+  &.isGreen {
+    color: #55dbc9;
+  }
+}
+
+.image {
+  width: 290px;
+  height: 166px;
+  margin: 2.5rem auto 0;
+  background-color: #303030;
+}

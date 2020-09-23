@@ -1,0 +1,133 @@
+.menu {
+  z-index: 100;
+
+  > button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: 0;
+    background: none;
+    line-height: 0;
+    color: #303030;
+    z-index: 10;
+    transition: opacity .3s;
+
+    &:active,
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover {
+      opacity: .75;
+    }
+
+    &.isOpen {
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -1rem;
+        width: 0;
+        height: 2px;
+        background-color: #303030;
+        animation: grow .5s ease forwards;
+      }
+    }
+  }
+
+  svg {
+    height: 18px;
+
+    path {
+      fill: currentColor;
+    }
+  }
+
+  .menuContent {
+    max-width: 398px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    padding: 11rem 2.5rem 0;
+    background-color: #ffffff;
+    z-index: 9;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      list-style: none;
+
+      li {
+        margin: .6rem -2.5rem .6rem 0;
+        transform: translate3d(-10px, 0, 0);
+        opacity: 0;
+        animation: fadeRight .5s ease forwards;
+
+        @for $i from 1 through 5 {
+          &:nth-child(#{$i}) {
+            animation-delay: 0.1s * $i;
+          }
+        }
+
+        &.isHighlighted {
+          a,
+          button {
+            color: #55dbc9;
+          }
+        }
+
+        a,
+        button {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          height: 3.6rem;
+          padding: 0;
+          border: 0;
+          border-bottom: 1px solid #606060;
+          background: none;
+          font-family: 'MuseoModerno', sans-serif;
+          font-size: 1.9rem;
+          font-weight: 700;
+          text-decoration: none;
+          color: #303030;
+
+          &:active,
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 0rem;
+  }
+
+  100% {
+    width: 9.5rem;
+  }
+}
+
+@keyframes fadeRight {
+  0% {
+    transform: translate3d(-10px, 0, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}

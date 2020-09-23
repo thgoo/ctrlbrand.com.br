@@ -1,0 +1,44 @@
+.faq {
+  margin: 2.4rem 0 5rem;
+  padding: 0 2.4rem;
+
+  .intro {
+    font-family: 'MuseoModerno', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .small {
+    margin-top: 1.6rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+  }
+}
+
+.faqContent {
+  display: flex;
+  flex-direction: column;
+
+  .question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 5rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #cccccc;
+    background: none;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.25;
+    text-align: left;
+    color: #fd76b8;
+
+    svg {
+      height: 1.4rem;
+    }
+  }
+}
